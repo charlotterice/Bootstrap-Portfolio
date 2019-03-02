@@ -1,0 +1,11 @@
+body{
+    background-image:url(wet_snow.png)
+}
+h1{ 
+    color:darkgray;
+}
+#navbarText {
+    color:darkgray;
+    text-align:right;
+    font-family: Arial, Helvetica, sans-serif;
+}
