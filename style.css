@@ -14,13 +14,36 @@ section {
     background:white;
     border: solid whitesmoke 10px;
     margin:40px;
+    padding: 20px;
 }
 h2{
     border-bottom: solid whitesmoke;
 }
-img{
+img {
     padding:20px;
+    max-width:300px;
+    max-height:400px;
+    height:100%;
+    width:100%;
 }
 .row1 {
     padding:10px;
+}
+footer {
+    background-color:#e3f2fd;
+    color:gray;
+    text-align:center;
+    padding:15px;
+    height: 50px;
+    margin-top: 70px;
+      }
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  .container {
+    min-height: 100%;
+  }
+.blank {
+    border:solid white;
 }
