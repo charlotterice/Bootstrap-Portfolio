@@ -30,7 +30,7 @@ img {
     padding:10px;
 }
 footer {
-    background-color:#e3f2fd;
+    background-color:#c1e1f8;
     color:gray;
     text-align:center;
     padding:15px;
@@ -46,4 +46,11 @@ html, body {
   }
 .blank {
     border:solid white;
+}
+input[type=submit] {
+    background-color:#c1e1f8;
+    color: gray;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
