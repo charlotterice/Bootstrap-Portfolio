@@ -14,86 +14,113 @@
     <title>Bootstrap Portfolio</title>
   </head>
   <body>
-    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-      <h1>Charlotte Ashlee Rice</h1>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarText"
-        aria-controls="navbarText"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html"
-              >Index <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
+    <div id="background-carousel">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div
+            class="item active"
+            style="background-image:url(http://placehold.it/1600x800/)"
+          ></div>
+          <div
+            class="item"
+            style="background-image:url(http://placehold.it/1600x800/)"
+          ></div>
+          <div
+            class="item"
+            style="background-image:url(http://placehold.it/1600x800/)"
+          ></div>
+        </div>
       </div>
-    </nav>
-    <div class="container">
-      <section>
-        <div class="row a">
-          <div class="col-lg-12">
-            <h2>About Me</h2>
-          </div>
-        </div>
-        <div class="row b">
-          <div class="col-lg-4">
-            <img src="IMG_1982.jpeg" alt="This is an image" />
-          </div>
-          <div class="col-lg-8">
-            <p>
-              I am a highly analytical Supply Chain professional looking to
-              jumpstart my career change into Web Development. I am a highly
-              analytical representative interested in finding a position in
-              which existing skills of problem solving and process improvement
-              initiative can be leveraged to contribute to streamlining and
-              enabling the company to exceed competitors in the market while
-              maintaining efficiency to the system’s users.
-            </p>
-
-            <p>
-              I am currently enrolled in the UCF Coding Bootcamp which has
-              motivated me to pursue my passion for web application development.
-              Although this program has exposed me to multiple coding languages
-              and libraries, my specialty is in back end including Javascript,
-              node and Sequelize.
-            </p>
-
-            <p>
-              The platforms used to edit and publish my applications include
-              Visual Studio Code, GitHub and Heroku.
-            </p>
-
-            <p>Want to check out more of my work?</p>
-            <br />
-            <p>
-              <a href="https://github.com/charlotterice">
-                Check out my GitHub Repo!</a
-              >
-            </p>
-          </div>
-        </div>
-      </section>
     </div>
-    <footer class="footer">
-        <a href="https://www.linkedin.com/in/charlotte-rice-73397ba5/"> LinkedIn</a>
-     || Copyright© ||
-      <a href="https://github.com/charlotterice"> Check out my GitHub Repo!</a>
-    </footer>
+    <div id="content-wrapper">
+      <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <h1>Charlotte Ashlee Rice</h1>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"
+                >Index <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container">
+        <section>
+          <div class="row a">
+            <div class="col-lg-12">
+              <h2>About Me</h2>
+            </div>
+          </div>
+          <div class="row b">
+            <div class="col-lg-4">
+              <img
+                src="./Portfolio_files/IMG_1982.jpeg"
+                alt="This is an image"
+              />
+            </div>
+            <div class="col-lg-8">
+              <p>
+                I am a highly analytical Supply Chain professional looking to
+                jumpstart my career change into Web Development. I am a highly
+                analytical representative interested in finding a position in
+                which existing skills of problem solving and process improvement
+                initiative can be leveraged to contribute to streamlining and
+                enabling the company to exceed competitors in the market while
+                maintaining efficiency to the system’s users.
+              </p>
+
+              <p>
+                I am currently enrolled in the UCF Coding Bootcamp which has
+                motivated me to pursue my passion for web application
+                development. Although this program has exposed me to multiple
+                coding languages and libraries, my specialty is in back end
+                including Javascript, node and Sequelize.
+              </p>
+
+              <p>
+                The platforms used to edit and publish my applications include
+                Visual Studio Code, GitHub and Heroku.
+              </p>
+
+              <p>Want to check out more of my work?</p>
+              <br />
+              <p>
+                <a href="https://github.com/charlotterice">
+                  Check out my GitHub Repo!</a
+                >
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <a href="https://www.linkedin.com/in/charlotte-rice-73397ba5/">
+          LinkedIn</a
+        >
+        || Copyright© ||
+        <a href="https://github.com/charlotterice">
+          Check out my GitHub Repo!</a
+        >
+      </footer>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
