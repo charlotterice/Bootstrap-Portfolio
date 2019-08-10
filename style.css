@@ -1,16 +1,21 @@
 
+#homepage-card{
+    border:none;
+}
 .homepage-container{
 align-items: center;
-margin:200px;
+height: 50%;
+margin-top: 10%;
+margin-left:20%;
+margin-right:20%;
 }
 #homepage-card{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size:50px;
     background-color:whitesmoke;
 }
-#navbarText {
-    text-align:right;
-    font-family: Arial, Helvetica, sans-serif;
+#navbar{
+    align-content: right;
 }
 section {
     background:white;
@@ -32,9 +37,6 @@ img {
 }
 .row1 {
     padding:10px;
-}
-#footer{
-   align-content: center;
 }
 html, body {
     height: 100%;
@@ -87,7 +89,4 @@ html,body {
 }
 .well {
     opacity:0.85
-}
-#aboutme {
-margin-bottom:20px;
 }
