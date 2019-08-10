@@ -5,8 +5,7 @@ var config = {
     databaseURL: "https://portfolio-107e6.firebaseio.com",
     projectId: "portfolio-107e6",
     storageBucket: "portfolio-107e6.appspot.com",
-    messagingSenderId: "724122450167",
-    appId: "1:724122450167:web:e6dcc15635c72cb4"
+    messagingSenderId: "724122450167"
   };
   firebase.initializeApp(config);
   

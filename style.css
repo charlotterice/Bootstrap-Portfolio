@@ -15,10 +15,17 @@ margin-right:20%;
 .contact-container{
     align-items: center;
     height: 50%;
-    margin-top:15%;
+    margin-top:10%;
     margin-left:20%;
     margin-right:20%;
     }
+.other-container{
+        align-items: center;
+        height: 50%;
+        margin-top:10%;
+        margin-left:10%;
+        margin-right:10%;
+        }
 #homepage-card{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size:50px;
