@@ -12,6 +12,13 @@ margin-top: 10%;
 margin-left:20%;
 margin-right:20%;
 }
+.contact-container{
+    align-items: center;
+    height: 50%;
+    margin-top:5%;
+    margin-left:20%;
+    margin-right:20%;
+    }
 #homepage-card{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size:50px;
