@@ -4,12 +4,11 @@ align-items: center;
 margin:200px;
 }
 #homepage-card{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size:50px;
     background-color:whitesmoke;
 }
 #navbarText {
-    color:gray;
     text-align:right;
     font-family: Arial, Helvetica, sans-serif;
 }
