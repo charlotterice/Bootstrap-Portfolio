@@ -67,7 +67,7 @@ html, body {
 }
 input[type=submit] {
     background-color:#c1e1f8;
-    color: gray;
+    color: white;
     padding: 16px 32px;
     margin: 4px 2px;
     cursor: pointer;
@@ -106,4 +106,12 @@ html,body {
 }
 .well {
     opacity:0.85
+}
+#navbarText{
+    font-size:30px;
+    text-shadow:
+		-1px -1px 0 gray,
+		1px -1px 0 gray,
+		-1px 1px 0 white,
+		1px 1px 0 white;
 }
