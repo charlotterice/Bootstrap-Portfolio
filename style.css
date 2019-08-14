@@ -1,5 +1,8 @@
 body{
     background-image: url(img2974_Hero_LegalTech2019.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position:center center;
 }
 h2{
     text-align: center;
