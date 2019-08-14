@@ -12,8 +12,6 @@ h2{
     border:none;
 }
 .homepage-container{
-align-items: center;
-height: 50%;
 margin-top: 15%;
 margin-left:20%;
 margin-right:20%;
@@ -34,7 +32,7 @@ margin-right:20%;
         }
 #homepage-card{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size:50px;
+    font-size:300%;
     background-color:whitesmoke;
 }
 #navbar{
@@ -43,13 +41,8 @@ margin-right:20%;
 section {
     background:white;
     border: solid whitesmoke 10px;
-    margin:40px;
-    margin-bottom:80px;
-    padding: 20px;
-    opacity:0.85
-}
-h2{
-    text-align: center;
+    opacity:0.85;
+    margin-bottom:25%;
 }
 img {
     padding:20px;
@@ -78,41 +71,6 @@ input[type=submit] {
     margin: 4px 2px;
     cursor: pointer;
 }
-html,body {
-    height:100%;
-	width:100%;
-	position:relative;
-}
-#background-carousel{
-	position:fixed;
-	width:100%;
-	height:100%;
-	z-index:-1;
-}
-.carousel,
-.carousel-inner {
-	width:100%;
-	height:100%;
-	z-index:0;
-	overflow:hidden;
-}
-.item {
-	width:100%;
-	height:100%;
-	background-position:center center;
-	background-size:cover;
-	z-index:0;
-}
- 
-#content-wrapper {
-	position:absolute;
-	z-index:1 !important;
-	min-width:100%;
-	min-height:100%;
-}
-.well {
-    opacity:0.85
-}
 #navbarText{
     font-size:30px;
     text-shadow:
@@ -120,4 +78,7 @@ html,body {
 		1px -1px 0 gray,
 		-1px 1px 0 white,
 		1px 1px 0 white;
+}
+#navbar{
+    margin-top:10px;
 }
