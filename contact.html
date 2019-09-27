@@ -2,78 +2,112 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <title>Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+     <!-- Firebase Reference -->
+     <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     />
-    <link href="dist/hamburgers.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <link href="dist/hamburgers.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
-      <!-- Firebase Link -->
-      <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
-    <title>Contact</title>
   </head>
   <body>
     <div id="content-wrapper">
-      <nav class="navbar navbar-light" style="background-color: transparent;" id="navbar">
-        <div class="navbar-toggler hamburger hamburger--spin hamburger-box"
-            data-toggle="collapse"
-            data-target="#navbarText"
-            aria-controls="navbarText"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-              <div class="hamburger-inner"></div>
-          </div>
-      <div class="collapse navbar-expand-lg" id="navbarText">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html"
-              >Homepage<span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="aboutme.html"
-              >About Me<span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      <nav
+        class="navbar navbar-light"
+        style="background-color: transparent;"
+        id="navbar"
+      >
+        <div
+          class="navbar-toggler hamburger hamburger--spin hamburger-box"
+          data-toggle="collapse"
+          data-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <div class="hamburger-inner"></div>
+        </div>
+        <div class="collapse navbar-expand-lg" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"
+                >Homepage<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="aboutme.html"
+                >About Me<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <div class="contact-container">
-          <section>
-            <div class="card">
-  <div class="card-body">
-    <h2 class="card-title">Contact</h2>
-    <form>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Name</label>
-          <input type="text" class="form-control" id="contact-name" placeholder="John Doe">
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlInput2">Email address</label>
-            <input type="email" class="form-control" id="contact-email" placeholder="name@example.com">
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">Message</label>
-          <textarea class="form-control" id="message" rows="3" placeholder="Your Message Here"></textarea>
-        </div>
-        <button type="submit" class="btn btn-info" id = "add-contact-button">Submit</button>
-      </form>
-  </div>
-</div>
-            </section>
+        <!-- <section> -->
+          <div class="card">
+            <div class="card-header">
+              <h2>Send a Message</h2>
+            </div>
+            <div class="card-body">
+              <!-- <h2 class="card-title">Contact</h2> -->
+              <form>
+                <div class="form-group">
+                  <label for="contact-name">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="contact-name"
+                    placeholder="John Doe"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="contact-email">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="contact-email"
+                    placeholder="name@example.com"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="3"
+                    placeholder="Your Message Here"
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-info"
+                  id="add-contact-button"
+                >
+                  Submit
+                </button>
+              </form>
+            <!-- </div> -->
           </div>
+        <!-- </section> -->
+      </div>
       <nav class="navbar fixed-bottom navbar-light bg-light">
-          <div id="footer">
+        <div id="footer">
           <a
             class="navbar-brand"
             href="https://www.linkedin.com/in/charlotte-rice-73397ba5/"
@@ -82,8 +116,9 @@
           <a class="navbar-brand" href="https://github.com/charlotterice"
             >GitHub</a
           >
-          </div>
-        </nav>
+        </div>
+      </nav>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -99,18 +134,27 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="../Bootstrap-Portfolio/app.js"></script>
-    <script src="/__/firebase/6.3.5/firebase-auth.js"></script>
-    <script src="/__/firebase/6.3.5/firebase-firestore.js"></script>
-    <script> var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
+    <script src="../website/app.js"></script>
+    <script>
+      var forEach = function(t, o, r) {
+        if ("[object Object]" === Object.prototype.toString.call(t))
+          for (var c in t)
+            Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t);
+        else for (var e = 0, l = t.length; l > e; e++) o.call(r, t[e], e, t);
+      };
 
       var hamburgers = document.querySelectorAll(".hamburger");
       if (hamburgers.length > 0) {
         forEach(hamburgers, function(hamburger) {
-          hamburger.addEventListener("click", function() {
-            this.classList.toggle("is-active");
-          }, false);
+          hamburger.addEventListener(
+            "click",
+            function() {
+              this.classList.toggle("is-active");
+            },
+            false
+          );
         });
-      }</script>
+      }
+    </script>
   </body>
 </html>
