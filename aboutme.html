@@ -10,42 +10,48 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link href="dist/hamburgers.css" rel="stylesheet">
+    <link href="dist/hamburgers.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <title>About Me</title>
   </head>
   <body>
     <div id="content-wrapper">
-      <nav class="navbar navbar-light" style="background-color: transparent;" id="navbar">
-        <div class="navbar-toggler hamburger hamburger--spin hamburger-box"
-            data-toggle="collapse"
-            data-target="#navbarText"
-            aria-controls="navbarText"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-              <div class="hamburger-inner"></div>
-          </div>
-      <div class="collapse navbar-expand-lg" id="navbarText">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html"
-              >Homepage<span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="aboutme.html"
-              >About Me<span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      <nav
+        class="navbar navbar-light"
+        style="background-color: transparent;"
+        id="navbar"
+      >
+        <div
+          class="navbar-toggler hamburger hamburger--spin hamburger-box"
+          data-toggle="collapse"
+          data-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <div class="hamburger-inner"></div>
+        </div>
+        <div class="collapse navbar-expand-lg" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"
+                >Homepage<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="aboutme.html"
+                >About Me<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <div class="other-container">
         <section>
           <div class="row-a">
@@ -62,20 +68,29 @@
             </div>
             <div class="col-lg-8" id="aboutme">
               <p>
-                  I am a UX-Focused Web Developer using diverse technical skill set and problem solving abilities to build exceptional web experiences. I hold a bachelor’s degree in Interdisciplinary Studies focused in Economics and a professional certification in Full Stack Web Development. I am seeking a position in
-                which existing skills of problem solving and process improvement
-                initiative can be leveraged to enable your company to exceed competitors 
-                in the market with innovative ideas while maintaining efficiency to the system’s users.
+                I am a UX-Focused Web Developer with a passion for data
+                visualization. I hold a bachelor’s degree in Interdisciplinary
+                Studies focused in Economics and a professional certification in
+                Full Stack Web Development. My diverse technical skill set and
+                problem solving abilities allow me build exceptional processes
+                and web experiences. I am seeking a position in which existing
+                strengths of problem solving and process improvement initiative
+                can be leveraged to enable your company to exceed competitors in
+                the market with innovative ideas while maintaining efficiency to
+                the system’s users.
               </p>
 
               <p>
-                 Although this program has exposed me to multiple
-                coding languages and technologies, my specialty is in back end
-                including Sequelize, Node, Express, and JavaScript.
+                My passions are SQL database cleansing, data standardization,
+                and analysis, especially through Tableau! I am currently
+                enrolled in UCF Speed Spanish and Tableau Desktop I
+                Fundementals.
               </p>
 
               <p>
-                The platforms used to edit and publish my applications include
+                UCF coding bootcamp exposed me to multiple coding languages and
+                technologies such as mySQL, HTML, CSS, and Javascript.The
+                platforms used to edit and publish my applications include
                 Visual Studio Code, GitHub and Heroku.
               </p>
 
@@ -90,8 +105,8 @@
           </div>
         </section>
       </div>
-        <nav class="navbar fixed-bottom navbar-light bg-light">
-          <div id="footer">
+      <nav class="navbar fixed-bottom navbar-light bg-light">
+        <div id="footer">
           <a
             class="navbar-brand"
             href="https://www.linkedin.com/in/charlotte-rice-73397ba5/"
@@ -100,8 +115,8 @@
           <a class="navbar-brand" href="https://github.com/charlotterice"
             >GitHub</a
           >
-          </div>
-        </nav>
+        </div>
+      </nav>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -118,15 +133,26 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script> var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
+    <script>
+      var forEach = function(t, o, r) {
+        if ("[object Object]" === Object.prototype.toString.call(t))
+          for (var c in t)
+            Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t);
+        else for (var e = 0, l = t.length; l > e; e++) o.call(r, t[e], e, t);
+      };
 
       var hamburgers = document.querySelectorAll(".hamburger");
       if (hamburgers.length > 0) {
         forEach(hamburgers, function(hamburger) {
-          hamburger.addEventListener("click", function() {
-            this.classList.toggle("is-active");
-          }, false);
+          hamburger.addEventListener(
+            "click",
+            function() {
+              this.classList.toggle("is-active");
+            },
+            false
+          );
         });
-      }</script>
+      }
+    </script>
   </body>
 </html>
