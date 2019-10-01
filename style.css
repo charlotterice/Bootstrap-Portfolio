@@ -1,8 +1,9 @@
 body{
-    background-image: url(img2974_Hero_LegalTech2019.jpg);
-    background-repeat: repeat-y;
+    background-image: url(rene-bohmer-YeUVDKZWSZ4-unsplash.jpg);
     background-size: cover;
-    background-position:center center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
 }
 h2{
     text-align: center;
@@ -46,6 +47,8 @@ section {
 }
 img {
     padding:20px;
+    max-width: 300px;
+    max-height:400px;
 }
 .row1 {
     padding:10px;
