@@ -15,7 +15,7 @@
     <title>About Me</title>
   </head>
   <body>
-    <div id="content-wrapper">
+  <div id="content-wrapper">
       <nav
         class="navbar navbar-light"
         style="background-color: transparent;"
@@ -52,60 +52,38 @@
           </ul>
         </div>
       </nav>
-      <div class="other-container">
-        <section>
-          <div class="row-a">
-            <div class="col-lg-12">
+      <div class="contact-container">
+          <div class="card">
+            <div class="card-header">
               <h2>About Me</h2>
             </div>
+            <div class="card-body">
+                <div class="row b">
+                    <div class="col-lg-5">
+                      <img
+                        src="./Portfolio_files/IMG_1522.jpeg"
+                        alt="This is an image"
+                      />
+                    </div>
+                    <div class="col-lg-7" id="aboutme">
+                      <br>
+                      <p>
+                        I am a highly skilled graduate of UCF in Interdisciplinary Studies and Full Stack Web Development currently pursuing a position in data analytics or UX web development.
+                      </p>
+                       <p>
+                          UCF Coding Bootcamp coupled with my conscientious personality has motivated me to pursue my passion for web application development and system analytics. Although the bootcamp has exposed me to multiple coding languages, platforms, and libraries, my passions are SQL, Tableau, and Express. </p>
+                        <p>
+                          The platforms used to edit and publish my applications include Visual Studio Code, GitHub and Heroku.
+                        </p>
+                        <a href="https://github.com/charlotterice">
+                          Check out my GitHub Repo!</a
+                        >
+                    </div>
+                  </div>
+          
           </div>
-          <div class="row b">
-            <div class="col-lg-4">
-              <img
-                src="./Portfolio_files/IMG_1522.jpeg"
-                alt="This is an image"
-              />
-            </div>
-            <div class="col-lg-8" id="aboutme">
-              <p>
-                I am a UX-Focused Web Developer with a passion for data
-                visualization. I hold a bachelor’s degree in Interdisciplinary
-                Studies focused in Economics and a professional certification in
-                Full Stack Web Development. My diverse technical skill set and
-                problem solving abilities allow me build exceptional processes
-                and web experiences. I am seeking a position in which existing
-                strengths of problem solving and process improvement initiative
-                can be leveraged to enable your company to exceed competitors in
-                the market with innovative ideas while maintaining efficiency to
-                the system’s users.
-              </p>
-
-              <p>
-                My passions are SQL database cleansing, data standardization,
-                and analysis, especially through Tableau! I am currently
-                enrolled in UCF Speed Spanish and Tableau Desktop I
-                Fundementals.
-              </p>
-
-              <p>
-                UCF coding bootcamp exposed me to multiple coding languages and
-                technologies such as mySQL, HTML, CSS, and Javascript.The
-                platforms used to edit and publish my applications include
-                Visual Studio Code, GitHub and Heroku.
-              </p>
-
-              <p>Want to check out more of my work?</p>
-              <br />
-              <p>
-                <a href="https://github.com/charlotterice">
-                  Check out my GitHub Repo!</a
-                >
-              </p>
-            </div>
-          </div>
-        </section>
       </div>
-      <nav class="navbar fixed-bottom">
+      <!-- <nav class="navbar fixed-bottom navbar-light bg-light">
         <div id="footer">
           <a
             class="navbar-brand"
@@ -116,7 +94,7 @@
             >GitHub</a
           >
         </div>
-      </nav>
+      </nav> -->
     </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -133,6 +111,7 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="../website/app.js"></script>
     <script>
       var forEach = function(t, o, r) {
         if ("[object Object]" === Object.prototype.toString.call(t))
@@ -154,5 +133,5 @@
         });
       }
     </script>
-  </body>
+    </body>
 </html>
